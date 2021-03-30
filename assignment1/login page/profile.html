@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>profile page</title>
+	<link rel="stylesheet" type="text/css" href="css/custom.css">
+	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+</head>
+<body>
+	<div class="profile-main">
+		<div class="profile-header">
+			<div class="user-detail">
+				<div class="user-image">
+					<img src="girl4.png">
+				</div>
+				<div class="user-data">
+					<h2>Ketki Gajbhiye</h2>
+					<span class="post-label">Web Developer</span>
+					<span class="post-label">Graphic Designer</span>
+					
+					<i class="fa fa-map-marker" aria-hidden="true"></i>  Nagpur, Maharashtra
+					</p>
+				</div>
+				<div class="social-icons">
+					<i class="fa fa-facebook"></i>
+					<i class="fa fa-twitter"></i>
+					<i class="fa fa-linkedin"></i>
+					<i class="fa fa-google"></i>
+					<i class="fa fa-instagram"></i>
+					<a href="#" type="button" class="msg-btn"><i class="fa fa-envelope-o" aria-hidden="true"></i>Send Message</a>
+				</div>
+			</div>
+			<div class="tab-panel-main">
+				<ul class="tabs">
+					<li class="tab-link current" data-tab="Basic-detail">Basic Detail</li>
+					<li class="tab-link" data-tab="Edu-detail">Educational Detail</li>
+					
+				</ul>
+				<div id="Basic-detail" class="tab-content current">
+					<div class="skill-box">
+					  <ul>
+						<li><strong>My Core Skills:</strong></li>
+						<li>WEB DEVELOPMENT<i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i></li>
+						<li>GRAPHIC DESIGNING<i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i></li>
+						
+					  </ul>		
+					</div>
+					<div class="bio-box">
+						<div class="heading">
+							<p>Professional Bio
+							<label>1 Year Experience</label></p>
+						</div>
+						<div class="desc">
+							I’m a web developer. I spend my whole day, practically every day, experimenting with HTML, CSS, and JavaScript. I build websites that delight and inform. I do it well.
+
+						</div>
+					</div>
+					<div class="detail-box">
+						<p>Detail</p>
+						<ul class="ul-first">
+							<li>Birth date</li>
+							<li>City</li>
+							<li>Country</li>
+							<li>Contact No</li>
+						</ul>
+						<ul class="ul-second">
+							<li>23 March 1999</li>
+							<li>Nagpur</li>
+							<li>Maharashtra</li>
+							<li>1122334455</li>
+						</ul>
+					</div>
+				</div>
+				<div id="Edu-detail" class="tab-content">
+					<div class="Edu-box-main">
+						 <h2><i class="fa fa-graduation-cap" aria-hidden="true"></i> Education</h2>
+						 <div class="Edu-box">
+						 	<h5><span>Web Developer</span> <br>
+						 		2018-2019 , SSIT Pvt Ltd.</h5>
+						 	<p>It was a Internship i have completed during my graduation</p>
+						 </div>
+						 <div class="Edu-box">
+						 	<h5><span>Graphic Designer</span> <br>
+						 		2019 - 2020 | Zoom Media</h5>
+						 	<p>It was a full time internship where i had work as a graphic Designer</p>
+						 </div>
+					</div>
+				</div>
+				
+			</div>
+		</div>
+		<div style="clear: both;"></div>
+		<div class="footer">
+			<p><strong>My Badges</strong></p><br>
+			<div class="footer-box"><i class="fa fa-facebook"></i></div>
+			<div class="footer-box"><i class="fa fa-twitter"></i></div>
+			<div class="footer-box"><i class="fa fa-linkedin"></i></div>
+			<div class="footer-box"><i class="fa fa-google"></i></div>
+			<div class="footer-box"><i class="fa fa-instagram"></i></div>
+		</div>
+	</div>
+<script type="text/javascript">
+	$(document).ready(function(){
+		$('ul.tabs li').click(function(){
+			var tab_id = $(this).attr('data-tab');
+
+			$('ul.tabs li').removeClass('current');
+			$('.tab-content').removeClass('current');
+
+			$(this).addClass('current');
+			$("#"+tab_id).addClass('current');
+		});
+	});
+</script>
+</body>
+</html>
